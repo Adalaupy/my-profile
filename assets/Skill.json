@@ -1,0 +1,66 @@
+[
+    {
+        "skill": "Microsoft office",
+        "familiarity": 5
+    },
+    {
+        "skill": "SAS",
+        "familiarity": 3
+    },
+    {
+        "skill": "Data Analytics",
+        "familiarity": 4
+    },
+    {
+        "skill": "Adobe Premiere Pro",
+        "familiarity": 4
+    },
+    {
+        "skill": "SPSS",
+        "familiarity": 3
+    },
+    {
+        "skill": "Tableau",
+        "familiarity": 4
+    },
+    {
+        "skill": "Python",
+        "familiarity": 4
+    },
+    {
+        "skill": "SSIS",
+        "familiarity": 3
+    },
+    {
+        "skill": "Azure",
+        "familiarity": 2
+    },
+    {
+        "skill": "MS SQL",
+        "familiarity": 5
+    },
+    {
+        "skill": "Spark",
+        "familiarity": 3
+    },
+    {
+        "skill": "Pyspark",
+        "familiarity": 5
+    },
+    {
+        "skill": "HTML",
+        "familiarity": 4
+    },
+    {
+        "skill": "CSS",
+        "familiarity": 3
+    },
+    {
+        "skill": "Javascript",
+        "familiarity": 3
+    },
+    {
+        "skill": "React",
+        "familiarity": 3
+    }
+]

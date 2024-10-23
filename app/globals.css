@@ -3,25 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	margin: 0;
+	text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.bg1 {
+	background: linear-gradient(
+		53deg,
+		rgba(8, 0, 0, 1) 0%,
+		rgb(89, 93, 94) 100%
+	);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+	background: linear-gradient(
+		53deg,
+		rgba(8, 0, 0, 1) 0%,
+		rgb(89, 93, 94) 100%
+	);
+}
+
+.item-box {
+	background-color: rgb(209, 209, 209);
+	border-radius: 20px;
+	box-shadow: 0 0 15px rgba(252, 252, 252, 0.608);
+	padding: 20px;
+	width: 100%;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.container {
+		@apply mt-20 max-h-screen w-full max-w-[1200px] mx-auto my-auto;
+	}
+
+	.hover_scale {
+		@apply hover:transition hover:duration-100 hover:ease-in-out hover:transform hover:scale-[1.3];
+	}
+
+	.hover_underline {
+		@apply hover:after:absolute lg:hover:after:content-[''] hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:h-[2px] hover:after:animate-fadein;
+	}
+
+	h3 {
+		@apply text-xl font-bold;
+	}
 }

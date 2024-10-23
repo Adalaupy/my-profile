@@ -1,0 +1,65 @@
+[
+    {
+        "FromYear": 2018,
+        "FromMonth": 6,
+        "ToYear": 2019,
+        "ToMonth": 1,
+        "Title": "Data Entry Clerk (Part Time)",
+        "Company": "Tencent",
+        "isUsed": true,
+        "Job": [
+            "Prepared materials for events",
+            "Entered data",
+            "Rated and label the video of the Apps (Voov)"
+        ]
+    },
+    {
+        "FromYear": 2020,
+        "FromMonth": 6,
+        "ToYear": 2022,
+        "ToMonth": 7,
+        "Title": "Senior Data Programmer",
+        "Company": "Centaline Data Technology Limited",
+        "isUsed": true,
+        "Job": [
+            "Data maintenance for daily operation, such as Website",
+            "Gather users’ requirements and acquire data from multiple systems/departments",
+            "Plan on data logic, data flow and data structure for new application system",
+            "Work with front-end developers on data organizing and quality assurance",
+            "Apply data modelling to identify company’ opportunity",
+            "Prepare dashboard for reporting"
+        ]
+    },
+    {
+        "FromYear": 2019,
+        "FromMonth": 4,
+        "ToYear": 2020,
+        "ToMonth": 6,
+        "Title": "Administrative Assistant Clerk (Part Time)",
+        "Company": "Midas Innovation, Hong Kong",
+        "isUsed": true,
+        "Job": [
+            "Video, Photo editing",
+            "Planning events",
+            "Communicating with clients"
+        ]
+    },
+    {
+        "FromYear": 2022,
+        "FromMonth": 8,
+        "ToYear": 2023,
+        "ToMonth": 5,
+        "Title": "Data Engineer",
+        "Company": "DBS Bank",
+        "isUsed": true,
+        "Job": [
+            "Communicate with users and understand their’s needs and business domain knowledge",
+            "Define metadata based on users’ requirements and data architecture through collibra",
+            "Acquire data from s3 buckets and explore the data logic",
+            "Process data and build data pipelines",
+            "Use airflow to set regular jobs schedule for bank compaigns use",
+            "Design data architecture and plan on data flow",
+            "Conversion of SAS Code to Python"
+        ]
+    }
+]
