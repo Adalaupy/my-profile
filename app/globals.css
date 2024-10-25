@@ -61,9 +61,17 @@ body {
 	html {
 		@apply scroll-pt-8;
 	}
+
+	input,
+	textarea {
+		@apply p-2 rounded-lg border-2 border-['#fff'] bg-transparent text-w;
+	}
 }
 
 @layer utilities {
+	.input-box {
+		@apply flex items-center gap-5 w-[300px];
+	}
 	.item-box2 {
 		@apply border-2 border-dashed rounded-3xl p-5 pt-10 pb-10 mt-10;
 	}
