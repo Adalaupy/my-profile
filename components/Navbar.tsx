@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import ProjectDetail from "../assets/ProjectData";
+import ProjectDetail from "../constants/ProjectData";
 import { PiNavigationArrowFill } from "react-icons/pi";
 import clsx from "clsx";
 
@@ -17,10 +17,10 @@ const Navbar = () => {
 	const [isOpen, setisOpen] = useState(false);
 
 	return (
-		<div className="lg:h-8 text-w text-2xl relative  ">
+		<div className=" text-w text-2xl sticky top-0  ">
 			<div
 				className={clsx(
-					"flex gap-16 lg:justify-end lg:pr-10 lg:pt-5 max-lg:flex-col max-lg:h-screen max-lg:justify-center",
+					"flex gap-16 lg:justify-end lg:items-center lg:pr-10 lg:p-5 max-lg:flex-col max-lg:h-screen max-lg:justify-center bg2",
 					!isOpen && "max-lg:hidden"
 				)}
 			>
@@ -44,15 +44,16 @@ const Navbar = () => {
 						{item.label}
 
 						{isProjectHover && item.label === "My Project" && (
-							<div className="max-lg:hidden absolute pt-12 w-[250px] ">
-								<div className="flex flex-col gap-5 text-lg ">
+							<div className="max-lg:hidden absolute pt-16 w-[250px] ">
+								<div className="flex flex-col gap-5 text-xl font-semibold textshadow bg3">
 									{ProjectDetail.map((proj) => (
-										<div
+										<a
+											href={`/project-detail/${proj.id}`}
 											key={proj.id}
-											className="hover_scale"
+											className="hover_scale "
 										>
 											{proj.Name}
-										</div>
+										</a>
 									))}
 								</div>
 							</div>

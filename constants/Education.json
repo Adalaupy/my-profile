@@ -1,0 +1,27 @@
+[
+	{
+		"From": "2018",
+		"To": "2020",
+		"SchoolName": "City University of Hong Kong",
+		"Desc": "Business Analysis (CGPA:3.14)"
+	},
+
+	{
+		"From": "2016",
+		"To": "2018",
+		"SchoolName": "Community College of City University ",
+		"Desc": "Marketing (CGPA:3.71)"
+	},
+	{
+		"From": "2010",
+		"To": "2016",
+		"SchoolName": "S.T.F.A. Lee Shau Kee College",
+		"Desc": ""
+	},
+	{
+		"From": "2005",
+		"To": "2010",
+		"SchoolName": "S.K.H. Yan Laap Memorial Primary School",
+		"Desc": ""
+	}
+]
