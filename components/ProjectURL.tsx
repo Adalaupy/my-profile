@@ -7,7 +7,7 @@ const ProjectURL = ({ tryme, github }: { tryme: string; github: string }) => {
 		<div>
 			<h4>More detail</h4>
 			<div className="item-box2 ">
-				<div className="text-w flex items-center justify-evenly">
+				<div className="text-w flex items-center justify-evenly gap-5 flex-wrap">
 					<ButtonURL url={github} content="Github">
 						{<FaGithub />}
 					</ButtonURL>

@@ -3,7 +3,7 @@ const ProjectPoint = ({ pointList }: { pointList: string[] }) => {
 		<div>
 			<h4>Installed Packages</h4>
 			<div className="item-box2 ">
-				<ul className="pl-10 pr-10 text-xl ">
+				<ul className="pl-10 pr-10 text-xl max-lg:text-sm ">
 					{pointList.map((item, index) => (
 						<li
 							key={index}

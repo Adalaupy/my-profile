@@ -11,7 +11,7 @@ const page = () => {
 				{ProjectDetail.map((project) => (
 					<div
 						key={project.id}
-						className="lg:w-[600px] max-lg:w-[300px] item-box flex flex-col gap-10 "
+						className="lg:w-[600px] max-lg:w-[300px] min-h-[500px] item-box flex flex-col gap-10 justify-center"
 					>
 						<h3>{project.Name}</h3>
 						<img
@@ -20,7 +20,7 @@ const page = () => {
 							alt={project.Name}
 						/>
 
-						<div className="flex justify-center gap-8 max-lg:gap-5 items-center max-lg:flex-col">
+						<div className="flex  items-center justify-center gap-8 max-lg:gap-5 max-lg:flex-col">
 							<ButtonURL url={project.GithubURL} content="Github">
 								{<FaGithub />}
 							</ButtonURL>
@@ -37,33 +37,6 @@ const page = () => {
 									<PiTestTubeFill />
 								</ButtonURL>
 							)}
-
-							{/* <a
-								rel="noopener noreferrer"
-								target="_blank"
-								className="btn1 hover_scale  "
-								href={project.GithubURL}
-							>
-								Github
-							</a>
-
-							<a
-								className="btn1 hover_scale "
-								href={`/project-detail/${project.id}`}
-							>
-								Detail Page
-							</a>
-
-							{project.TryMe && (
-								<a
-									rel="noopener noreferrer"
-									target="_blank"
-									className="btn1 hover_scale "
-									href={project.TryMe}
-								>
-									Try Me
-								</a> 
-							)}*/}
 						</div>
 					</div>
 				))}

@@ -58,7 +58,7 @@ const ProjectDemo = ({ project }: { project: ProjectType }) => {
 						<div
 							onClick={() => Update_FnID(-1)}
 							className={clsx(
-								"max-lg:text-xl text-5xl text-w cursor-pointer hover_scale",
+								"arrow",
 								Curr_FnID === 1 && "opacity-20"
 							)}
 						>
@@ -79,7 +79,7 @@ const ProjectDemo = ({ project }: { project: ProjectType }) => {
 						<div
 							onClick={() => Update_FnID(1)}
 							className={clsx(
-								"max-lg:text-xl text-5xl text-w cursor-pointer hover_scale",
+								"arrow",
 								Curr_FnID === project?.detail.function.length &&
 									"opacity-20"
 							)}
@@ -87,8 +87,8 @@ const ProjectDemo = ({ project }: { project: ProjectType }) => {
 							<PiArrowFatLinesRightFill />
 						</div>
 					</div>
-					<div className="text-w text-center font-mono text-xl flex justify-center w-full">
-						<div className="w-1/2">{Curr_Fn?.Fn_Text}</div>
+					<div className="text-w text-center font-mono text-xl max-lg:text-sm flex justify-center w-full">
+						<div className="lg:w-1/2">{Curr_Fn?.Fn_Text}</div>
 					</div>
 				</div>
 			</div>

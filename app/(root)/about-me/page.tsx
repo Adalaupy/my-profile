@@ -2,7 +2,7 @@ import Education from "../../../constants/Education.json";
 import Skill from "../../../constants/Skills.json";
 import Cert from "../../../constants/Cert.json";
 import Work from "../../../constants/WorkHistory.json";
-
+import Me from "@/public/images/profilephoto.png";
 const page = () => {
 	const Self_Introduction =
 		"I am a self-motivated and responsible person who graduated in City University of Hong Kong specialising in Business Analysis. In order to enhance my ability of teamwork and adaptability, I have also applied different part-time job and internship program to jack up my experiences and learnt some skills that out of my major. I am now working as a Data Engineer, and I sincerely hope that my application will be accepted.";
@@ -12,10 +12,10 @@ const page = () => {
 	return (
 		<div className="container">
 			<div className="flex justify-center lg:items-start gap-10 max-lg:flex-col max-lg:items-center">
-				<div className="item-box basis-1/4">
+				<div className="item-box basis-1/4 flex flex-col justify-center items-center">
 					<img
-						className="mb-5"
-						src="/images/profilephoto.jpg"
+						className="mb-5 h-56 object-cover"
+						src={Me.src}
 						alt="my-pic"
 					/>
 					<h3>Profile photo</h3>
@@ -32,7 +32,10 @@ const page = () => {
 
 						<div className="flex flex-col gap-10">
 							{Education.map((item) => (
-								<div className="flex justify-between">
+								<div
+									key={item.From}
+									className="flex justify-between"
+								>
 									<div className="basis-1/4">
 										{item.From} - {item.To}
 									</div>
@@ -85,7 +88,10 @@ const page = () => {
 						<h3>Working History</h3>
 						<div className="flex flex-col gap-10">
 							{Work.map((item) => (
-								<div className="flex justify-between gap-10">
+								<div
+									key={item.Company}
+									className="flex justify-between gap-10"
+								>
 									<div className="basis-1/4">
 										{item.FromYear}.
 										{item.FromMonth.toString().padStart(
@@ -101,15 +107,15 @@ const page = () => {
 
 									<div className="basis-3/4 flex flex-col gap-4">
 										<div className="flex flex-col justify-start ">
-											<span className="font-bold text-2xl">
+											<span className="font-bold text-2xl max-lg:text-xl">
 												{item.Title}
 											</span>
-											<span className="text-xl">
+											<span className="text-xl max-lg:text-lg">
 												{item.Company}
 											</span>
 										</div>
 
-										<ul className="flex flex-col gap-3 list-outside list-disc text-lg">
+										<ul className="flex flex-col gap-3 list-outside list-disc text-lg max-lg:text-sm">
 											{item.Job.map((duty) => (
 												<li key={duty}>{duty}</li>
 											))}

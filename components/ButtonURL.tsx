@@ -1,5 +1,3 @@
-import React from "react";
-
 const ButtonURL = ({
 	url,
 	content,
@@ -10,15 +8,28 @@ const ButtonURL = ({
 	children: React.ReactElement;
 }) => {
 	return (
-		<a
-			className="btn1 hover_scale2"
-			rel="noopener noreferrer"
-			target="_blank"
-			href={url}
-		>
-			{children}
-			{content}
-		</a>
+		<div>
+			{content === "Detail Page" ? (
+				<a
+					className="btn1 hover_scale2"
+					rel="noopener noreferrer"
+					href={url}
+				>
+					{children}
+					{content}
+				</a>
+			) : (
+				<a
+					className="btn1 hover_scale2"
+					rel="noopener noreferrer"
+					target="_blank"
+					href={url}
+				>
+					{children}
+					{content}
+				</a>
+			)}
+		</div>
 	);
 };
 

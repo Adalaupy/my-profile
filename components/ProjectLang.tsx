@@ -17,7 +17,7 @@ const ProjectLang = ({ lang }: { lang: string[] }) => {
 		<div>
 			<h4>Language / Framework</h4>
 			<div className="item-box2">
-				<div className="flex justify-between flex-wrap gap-5">
+				<div className="flex justify-evenly flex-wrap gap-5">
 					{lang.map((item, index) => (
 						<div
 							key={index}

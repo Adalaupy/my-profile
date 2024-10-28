@@ -25,6 +25,10 @@
 	padding: 20px 0;
 }
 
+.bg4 {
+	background: rgba(114, 114, 114, 0.1);
+}
+
 body {
 	min-height: 100vh;
 }
@@ -64,19 +68,19 @@ body {
 
 	input,
 	textarea {
-		@apply p-2 rounded-lg border-2 border-['#fff'] bg-transparent text-w;
+		@apply pt-2 pb-2 pl-5 pr-5 rounded-lg border-2 border-['#fff'] bg-transparent text-w;
 	}
 }
 
 @layer utilities {
 	.input-box {
-		@apply flex items-center gap-5 w-[300px];
+		@apply w-full flex items-center gap-5 max-lg:justify-between max-lg:text-xs;
 	}
 	.item-box2 {
 		@apply border-2 border-dashed rounded-3xl p-5 pt-10 pb-10 mt-10;
 	}
 	.container {
-		@apply p-20 max-lg:p-10 w-full flex mx-auto my-auto;
+		@apply p-20 max-lg:pl-5 max-lg:pr-5  w-full flex mx-auto my-auto;
 	}
 
 	.hover_scale {
@@ -96,14 +100,18 @@ body {
 	}
 
 	h3 {
-		@apply text-2xl font-bold font-serif;
+		@apply text-2xl font-bold font-serif max-lg:text-xl;
 	}
 
 	.introbox {
-		@apply item-box text-left text-xl flex flex-col gap-10;
+		@apply item-box text-left text-xl flex flex-col gap-10 max-lg:text-lg;
 	}
 
 	.btn1 {
 		@apply rounded-2xl p-4 w-44 max-lg:p-2 text-[16px] max-lg:text-sm font-semibold shadow-xl font-sans cursor-pointer border-dashed border-2 border-[#6b6969] flex justify-center items-center gap-2;
+	}
+
+	.arrow {
+		@apply max-lg:text-2xl text-5xl text-w cursor-pointer hover_scale;
 	}
 }
