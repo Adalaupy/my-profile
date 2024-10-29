@@ -110,7 +110,7 @@ const page = () => {
 											<span className="font-bold text-2xl max-lg:text-xl">
 												{item.Title}
 											</span>
-											<span className="text-xl max-lg:text-lg">
+											<span className="text-lg italic">
 												{item.Company}
 											</span>
 										</div>

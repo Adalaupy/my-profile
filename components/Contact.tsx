@@ -29,7 +29,7 @@ const Contact = () => {
 			className="w-full mt-11 border-t-2 border-dotted "
 		>
 			<div className="flex max-lg:flex-col-reverse justify-center w-full">
-				<div className="basis-1/2 flex flex-col justify-center bg4 max-lg:bg5">
+				<div className="basis-1/2 flex flex-col justify-center bg4 max-lg:bg5 max-lg:border-t-2 border-r-2 border-dotted">
 					<h1 className="text-w text-2xl text-center font-mono  max-lg:text-xl pt-10 ">
 						FOLLOW ME
 					</h1>
