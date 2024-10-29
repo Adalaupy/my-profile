@@ -1,5 +1,5 @@
 import Shape from "@/components/Shape";
-import Me from "@/public/images/profilephoto.png";
+import Me from "@/public/images/homepage.png";
 
 const page = () => {
 	const Page_Title = "Hello World!";

@@ -6,39 +6,31 @@ import { PiArrowFatLinesLeftFill } from "react-icons/pi";
 import clsx from "clsx";
 
 type ProjectType = {
-	id: number;
-	Name: string;
-	Introduction: string;
-	GithubURL: string;
-	TryMe?: string;
-	CoverPhoto: StaticImageData;
-	tags: string[];
-	detail: {
-		function: {
-			fn_ID: number;
-			Fn_Text: string;
-			Fn_Img: StaticImageData;
-		}[];
-		packages: string[];
-		challenge_improvement: string[];
-	};
-};
+	fn_ID: number;
+	Fn_Text: string;
+	Fn_Img: StaticImageData;
+}[];
 
-const ProjectDemo = ({ project }: { project: ProjectType }) => {
+const ProjectDemo = ({
+	projectfunctions,
+}: {
+	projectfunctions: ProjectType;
+}) => {
 	const [Curr_FnID, setCurr_FnID] = useState(1);
 	const [isClickImg, setisClickImg] = useState(false);
 	const [Curr_Fn, setCurr_Fn] = useState(
-		project?.detail.function.find((item) => item.fn_ID === Curr_FnID)
+		projectfunctions?.find((item) => item.fn_ID === Curr_FnID)
 	);
 
 	const Update_FnID = (ID_Change: number) => {
-		if (ID_Change > 0 && Curr_FnID === project?.detail?.function?.length!)
-			return;
+		if (ID_Change > 0 && Curr_FnID === projectfunctions?.length!) return;
 		if (ID_Change < 0 && Curr_FnID === 1) return;
 
 		setCurr_FnID(Curr_FnID + ID_Change);
 		setCurr_Fn(
-			project?.detail.function.find((item) => item.fn_ID === Curr_FnID)
+			projectfunctions?.find(
+				(item) => item.fn_ID === Curr_FnID + ID_Change
+			)
 		);
 	};
 
@@ -47,6 +39,8 @@ const ProjectDemo = ({ project }: { project: ProjectType }) => {
 			{isClickImg && (
 				<ImageZoom
 					imgPath={Curr_Fn?.Fn_Img.src!}
+					Height={Curr_Fn?.Fn_Img.height!}
+					Width={Curr_Fn?.Fn_Img.width!}
 					setisClickImg={setisClickImg}
 				/>
 			)}
@@ -67,10 +61,10 @@ const ProjectDemo = ({ project }: { project: ProjectType }) => {
 
 						<div
 							onClick={() => setisClickImg(true)}
-							className="w-1/2 max-lg:w-3/4 cursor-pointer hover_scale2"
+							className="w-1/2 max-lg:w-3/4 cursor-pointer hover_scale2 flex justify-center"
 						>
 							<img
-								className="rounded-lg"
+								className="rounded-lg object-contain  max-h-[500px] "
 								src={Curr_Fn?.Fn_Img.src}
 								alt="function-img"
 							/>
@@ -80,7 +74,7 @@ const ProjectDemo = ({ project }: { project: ProjectType }) => {
 							onClick={() => Update_FnID(1)}
 							className={clsx(
 								"arrow",
-								Curr_FnID === project?.detail.function.length &&
+								Curr_FnID === projectfunctions.length &&
 									"opacity-20"
 							)}
 						>

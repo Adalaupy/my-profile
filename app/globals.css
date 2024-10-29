@@ -29,15 +29,18 @@
 	background: rgba(114, 114, 114, 0.1);
 }
 
+.bg5 {
+	background: rgba(147, 146, 146, 0.216);
+}
+
 body {
 	min-height: 100vh;
 }
 
 .item-box {
-	background-color: rgb(215, 215, 215);
+	background-color: rgb(226, 224, 224);
 	border-radius: 20px;
-	box-shadow: 0 0 15px rgba(252, 252, 252, 0.608);
-	/* width: 100%; */
+	box-shadow: 0 0 10px rgba(252, 252, 252, 0.508);
 	padding: 5% 40px;
 }
 
@@ -68,14 +71,11 @@ body {
 
 	input,
 	textarea {
-		@apply pt-2 pb-2 pl-5 pr-5 rounded-lg border-2 border-['#fff'] bg-transparent text-w;
+		@apply pt-2 pb-2 pl-5 pr-5 rounded-lg border-2 border-['#fff'] bg-transparent text-w w-96 text-sm;
 	}
 }
 
 @layer utilities {
-	.input-box {
-		@apply w-full flex items-center gap-5 max-lg:justify-between max-lg:text-xs;
-	}
 	.item-box2 {
 		@apply border-2 border-dashed rounded-3xl p-5 pt-10 pb-10 mt-10;
 	}
@@ -104,11 +104,11 @@ body {
 	}
 
 	.introbox {
-		@apply item-box text-left text-xl flex flex-col gap-10 max-lg:text-lg;
+		@apply item-box text-left text-lg flex flex-col gap-10 max-lg:text-lg;
 	}
 
 	.btn1 {
-		@apply rounded-2xl p-4 w-44 max-lg:p-2 text-[16px] max-lg:text-sm font-semibold shadow-xl font-sans cursor-pointer border-dashed border-2 border-[#6b6969] flex justify-center items-center gap-2;
+		@apply rounded-2xl p-4 w-36 max-lg:p-2 text-[16px] max-lg:text-sm font-semibold shadow-xl font-sans cursor-pointer border-dashed border-2 border-[#6b6969] flex justify-center items-center gap-2;
 	}
 
 	.arrow {

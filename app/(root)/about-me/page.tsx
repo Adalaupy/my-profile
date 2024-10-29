@@ -2,7 +2,7 @@ import Education from "../../../constants/Education.json";
 import Skill from "../../../constants/Skills.json";
 import Cert from "../../../constants/Cert.json";
 import Work from "../../../constants/WorkHistory.json";
-import Me from "@/public/images/profilephoto.png";
+import Me from "@/public/images/profile.jpg";
 const page = () => {
 	const Self_Introduction =
 		"I am a self-motivated and responsible person who graduated in City University of Hong Kong specialising in Business Analysis. In order to enhance my ability of teamwork and adaptability, I have also applied different part-time job and internship program to jack up my experiences and learnt some skills that out of my major. I am now working as a Data Engineer, and I sincerely hope that my application will be accepted.";

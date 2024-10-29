@@ -6,6 +6,8 @@ const ProjectLang = ({ lang }: { lang: string[] }) => {
 			{ language: "CSS", color: "#563d7c" },
 			{ language: "JavaScript", color: "#f1e05a" },
 			{ language: "React", color: "#2fd7ed" },
+			{ language: "React Native", color: "#1c51a6" },
+			{ language: "Expo", color: "#8c8e91" },
 		];
 
 		return colorcode.find(

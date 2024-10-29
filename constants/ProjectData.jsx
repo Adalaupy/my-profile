@@ -38,6 +38,16 @@ import Ins_Fn6 from "../public/projects/IG_Multi_Media/order.gif";
 import Ins_Fn7 from "../public/projects/IG_Multi_Media/post.gif";
 import Ins_Fn8 from "../public/projects/IG_Multi_Media/ins.gif";
 
+import Money_Cover from "../public/projects/Money_App/previewCalend.gif";
+import Money_F1 from "../public/projects/Money_App/addrecord.gif";
+import Money_F2 from "../public/projects/Money_App/updaterecord.gif";
+import Money_F3 from "../public/projects/Money_App/temp.gif";
+import Money_F4 from "../public/projects/Money_App/addcate.gif";
+import Money_F5 from "../public/projects/Money_App/enableCate.gif";
+import Money_F6 from "../public/projects/Money_App/chart.gif";
+import Money_F7 from "../public/projects/Money_App/previewCalend.gif";
+import Money_F8 from "../public/projects/Money_App/temp.gif";
+
 const ProjectDetail = [
 	{
 		id: 1,
@@ -350,6 +360,74 @@ const ProjectDetail = [
 				"Only Support Posting but not Story",
 				"Tagged Users are not shown in Preview",
 				"If one Vertical orientation photo exists, all the photos will be resized to Vertical orientation",
+			],
+		},
+	},
+	{
+		id: 6,
+		Name: "Money App",
+		Introduction:
+			"This is my first React Native Project (Expo) after I watched some tutorial from Youtube. This App is used for tracking my daily spending and income, besides input the records mannually, it also allows users to set some schedule so that the expense/income will be automatically recorded, this App allow users to do some simple customization such as adding their own Expense category.",
+		GithubURL: "https://github.com/Adalaupy/MoneyApp",
+		CoverPhoto: Money_Cover,
+		tags: ["React", "React Native", "Expo", "JAVASCRIPT", "HTML"],
+		detail: {
+			function: [
+				{
+					fn_ID: 1,
+					Fn_Text: "Input your own Expense / Income",
+					Fn_Img: Money_F1,
+				},
+				{
+					fn_ID: 2,
+					Fn_Text: "Edit your entered Expense / Income",
+					Fn_Img: Money_F2,
+				},
+				{
+					fn_ID: 3,
+					Fn_Text: "Delete your entered Expense / Income",
+					Fn_Img: Money_F3,
+				},
+				{
+					fn_ID: 4,
+					Fn_Text: "Customize your own cateogry by adding new one",
+					Fn_Img: Money_F4,
+				},
+				{
+					fn_ID: 5,
+					Fn_Text:
+						"Customize your own cateogry by enabling/disabling current one",
+					Fn_Img: Money_F5,
+				},
+				{
+					fn_ID: 6,
+					Fn_Text:
+						"summarize your financial situation by chart for different time period",
+					Fn_Img: Money_F6,
+				},
+				{
+					fn_ID: 7,
+					Fn_Text:
+						"Check your previous Records in both Calendar and List",
+					Fn_Img: Money_F7,
+				},
+				{
+					fn_ID: 8,
+					Fn_Text:
+						"set scheduled Income/Expense e.g. salary for automatic input",
+					Fn_Img: Money_F8,
+				},
+			],
+			packages: [
+				"@react-native-community/datetimepicker",
+				"react-native-calendars",
+				"react-native-chart-kit",
+				"react-native-dropdown-picker",
+				"react-native-modal-selector",
+			],
+			challenge_improvement: [
+				"UI design",
+				"only fundamental functions provided",
 			],
 		},
 	},

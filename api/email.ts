@@ -27,16 +27,17 @@ export const SendEmail = ({
 		reply_to: myEmail,
 	};
 
-	// console.log(JSON.stringify(EmailContent));
+	(FirstName == "" && LastName == "") || Email == "" || Message == ""
+		? alert("Please fill in all the fields!")
+		: emailjs.send(ServiceID, TemplateID, EmailContent, publicKey).then(
+				function (response) {
+					alert("Your message has been sent successfully!");
+				},
 
-	emailjs.send(ServiceID, TemplateID, EmailContent, publicKey).then(
-		function (response) {
-			alert("Your message has been sent successfully!");
-		},
-		function (error) {
-			alert(
-				"Your message has been sent failed! \n Please contact me through laupy10598@gmail.com . "
-			);
-		}
-	);
+				function (error) {
+					alert(
+						"Your message has been sent failed! \n Please contact me through laupy10598@gmail.com . "
+					);
+				}
+		  );
 };

@@ -24,95 +24,94 @@ const Contact = () => {
 	};
 
 	return (
-		<section id="contact" className="w-full mt-11 border-t-2 bg-zinc-800 ">
-			<h3 className="mt-5 text-4xl font-extrabold text-w mb-10 max-lg:text-xl">
-				Contact Me
-			</h3>
-			<form
-				className="text-w flex flex-col justify-center items-center gap-10"
-				onSubmit={(event) => Fn_SendEmail(event)}
-			>
-				<div className="flex justify-center items-center gap-10 max-lg:flex-col max-lg:gap-2 ">
-					<div className="input-box">
-						<label>First Name: </label>
+		<section
+			id="contact"
+			className="w-full mt-11 border-t-2 border-dotted "
+		>
+			<div className="flex max-lg:flex-col-reverse justify-center w-full">
+				<div className="basis-1/2 flex flex-col justify-center bg4 max-lg:bg5">
+					<h1 className="text-w text-2xl text-center font-mono  max-lg:text-xl pt-10 ">
+						FOLLOW ME
+					</h1>
+
+					<div className="text-w flex justify-center items-center gap-10 pb-10 mt-10 max-lg:text-xs ">
+						<a
+							href="https://github.com/Adalaupy/"
+							className="flex justify-center items-center gap-2"
+						>
+							<FaGithub />
+							Github
+						</a>
+
+						<a
+							className="flex justify-center items-center gap-2"
+							href="https://www.linkedin.com/in/ada-l-729728227/"
+						>
+							<FaLinkedin />
+							LinkedIn
+						</a>
+					</div>
+				</div>
+				<form
+					className="text-w flex flex-col justify-center items-center gap-10 basis-1/2 bg5"
+					onSubmit={(event) => Fn_SendEmail(event)}
+				>
+					<div className="flex flex-col items-center gap-2 max-lg:flex-col max-lg:gap-2 ">
+						<h1 className="mt-5 text-2xl text-w mb-5 max-lg:text-xl font-mono">
+							Contact Me
+						</h1>
 						<input
 							type="text"
 							id="FirstName"
 							name="firstname"
-							placeholder=""
+							placeholder="Enter Your First Name"
 							value={FirstName}
 							onChange={(e) => {
 								setFirstName(e.target.value);
 							}}
 						/>
-					</div>
 
-					<div className="input-box">
-						<label>Last Name: </label>
 						<input
 							type="text"
 							id="LastName"
 							name="lastname"
-							placeholder=""
+							placeholder="Enter Your Last Name"
 							value={LastName}
 							onChange={(e) => {
 								setLastName(e.target.value);
 							}}
 						/>
-					</div>
 
-					<div className="input-box">
-						<label>Email: </label>
 						<input
 							type="email"
 							id="email"
 							name="email"
-							placeholder=""
+							placeholder="Enter Your Email"
 							value={Email}
 							onChange={(e) => {
 								setEmail(e.target.value);
 							}}
 						/>
 					</div>
-				</div>
 
-				<div className="flex gap-2 justify-center items-center w-full flex-col input-box">
-					<label>Write something here...</label>
 					<textarea
 						rows={4}
-						className="w-1/2"
+						placeholder="Write something here..."
 						value={Message}
 						onChange={(e) => {
 							setMessage(e.target.value);
 						}}
 					/>
-				</div>
 
-				<div className="mb-10 hover_scale2  ">
-					<input
-						className="cursor-pointer"
-						id="submit"
-						type="submit"
-						value="Submit"
-					/>
-				</div>
-			</form>
-			<div className="text-w flex justify-center items-center gap-10 pb-10 mt-10 max-lg:text-xs">
-				<a
-					href="https://github.com/Adalaupy/"
-					className="flex justify-center items-center gap-2"
-				>
-					<FaGithub />
-					Github
-				</a>
-
-				<a
-					className="flex justify-center items-center gap-2"
-					href="https://www.linkedin.com/in/ada-l-729728227/"
-				>
-					<FaLinkedin />
-					LinkedIn
-				</a>
+					<div className="mb-10 hover_scale2  ">
+						<input
+							className="cursor-pointer"
+							id="submit"
+							type="submit"
+							value="Submit"
+						/>
+					</div>
+				</form>
 			</div>
 		</section>
 	);

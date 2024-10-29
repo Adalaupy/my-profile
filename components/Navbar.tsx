@@ -17,7 +17,7 @@ const Navbar = () => {
 	const [isOpen, setisOpen] = useState(false);
 
 	return (
-		<div className=" text-w text-2xl sticky top-0 z-20">
+		<div className=" text-w text-xl sticky top-0 z-20">
 			<div
 				className={clsx(
 					"flex gap-16 lg:justify-end lg:items-center lg:pr-10 lg:p-5 max-lg:flex-col max-lg:h-screen max-lg:justify-center bg2",
@@ -40,10 +40,12 @@ const Navbar = () => {
 						}}
 						className=" after:bg-w hover_underline relative flex justify-center cursor-pointer"
 					>
-						<a href={item.redirect}>{item.label}</a>
+						<a className="z-30" href={item.redirect}>
+							{item.label}
+						</a>
 						{isProjectHover && item.label === "My Project" && (
 							<div className="max-lg:hidden absolute pt-16 w-[250px] ">
-								<div className="flex flex-col gap-5 text-xl font-semibold textshadow bg3">
+								<div className="flex flex-col gap-5 text-lg font-semibold textshadow bg3">
 									{ProjectDetail.map((proj) => (
 										<a
 											href={`/project-detail/${proj.id}`}

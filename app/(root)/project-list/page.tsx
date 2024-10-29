@@ -11,11 +11,12 @@ const page = () => {
 				{ProjectDetail.map((project) => (
 					<div
 						key={project.id}
-						className="lg:w-[600px] max-lg:w-[300px] min-h-[500px] item-box flex flex-col gap-10 justify-center"
+						className=" lg:w-[600px] max-lg:w-[300px] item-box flex flex-col gap-10 justify-center"
 					>
-						<h3>{project.Name}</h3>
+						<h3 className="font-sans">{project.Name}</h3>
+
 						<img
-							className="rounded-xl"
+							className="rounded-xl lg:h-[400px] max-lg:h-[200px] object-contain shadow-inner bg2"
 							src={project.CoverPhoto.src}
 							alt={project.Name}
 						/>
