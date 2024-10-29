@@ -16,7 +16,7 @@ const page = () => {
 	return (
 		<div className="container">
 			<div className="flex flex-col text-left gap-5">
-				<h1 className="max-lg:text-2xl text-4xl font-bold text-w">
+				<h1 className="max-lg:text-2xl text-4xl font-bold text-w mb-10 underline underline-offset-[10px]">
 					{project?.Name}
 				</h1>
 
