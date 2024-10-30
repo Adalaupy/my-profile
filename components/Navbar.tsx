@@ -64,7 +64,7 @@ const Navbar = () => {
 
 			{/* Mobile */}
 
-			<div className="absolute right-9 top-8 lg:hidden ">
+			<div className="absolute right-9 top-8 lg:hidden">
 				<div
 					className="cursor-pointer"
 					onClick={() => {

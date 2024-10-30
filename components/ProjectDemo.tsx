@@ -61,7 +61,7 @@ const ProjectDemo = ({
 
 						<div
 							onClick={() => setisClickImg(true)}
-							className="w-1/2 max-lg:w-3/4 cursor-pointer hover_scale2 flex justify-center"
+							className="animate-zoomIn w-1/2 max-lg:w-3/4 cursor-pointer hover_scale2 flex justify-center"
 						>
 							<img
 								className="rounded-lg object-contain  max-h-[500px] "

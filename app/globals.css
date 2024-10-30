@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,6 +64,12 @@ body {
 .img-zoom {
 	background: rgba(8, 0, 0, 0.8);
 }
+.work-sans {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: italic;
+}
 
 @layer base {
 	html {
@@ -106,7 +113,9 @@ body {
 	.introbox {
 		@apply item-box text-left text-lg flex flex-col gap-10 max-lg:text-lg;
 	}
-
+	.intro-text {
+		@apply animate-movel2;
+	}
 	.btn1 {
 		@apply rounded-2xl p-4 w-36 max-lg:p-2 text-[16px] max-lg:text-sm font-semibold shadow-xl font-sans cursor-pointer border-dashed border-2 border-[#6b6969] flex justify-center items-center gap-2;
 	}

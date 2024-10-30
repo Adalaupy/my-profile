@@ -14,7 +14,7 @@ const page = () => {
 			<div className="flex justify-center lg:items-start gap-10 max-lg:flex-col max-lg:items-center">
 				<div className="item-box basis-1/4 flex flex-col justify-center items-center">
 					<img
-						className="mb-5 h-56 object-cover"
+						className="intro-text mb-5 h-56 object-cover"
 						src={Me.src}
 						alt="my-pic"
 					/>
@@ -24,13 +24,16 @@ const page = () => {
 				<div className="flex flex-col gap-10 basis-3/4">
 					<div className="item-box introbox">
 						<h3>About Me</h3>
-						<p className="font-sans">{Self_Introduction}</p>
+
+						<p className="intro-text font-sans">
+							{Self_Introduction}
+						</p>
 					</div>
 
 					<div className="item-box introbox">
 						<h3>Education</h3>
 
-						<div className="flex flex-col gap-10">
+						<div className="intro-text  flex flex-col gap-10">
 							{Education.map((item) => (
 								<div
 									key={item.From}
@@ -52,7 +55,7 @@ const page = () => {
 
 					<div className="item-box introbox">
 						<h3>Certificant</h3>
-						<div className="flex flex-col gap-10">
+						<div className="intro-text flex flex-col gap-10">
 							{Cert.map((item) => (
 								<div
 									key={item.Desc}
@@ -69,7 +72,7 @@ const page = () => {
 
 					<div className="item-box introbox">
 						<h3>Skill</h3>
-						<div className="flex flex-col gap-10">
+						<div className="intro-text flex flex-col gap-10">
 							{Skill.map((item) => (
 								<div
 									key={item.skill}
@@ -86,7 +89,7 @@ const page = () => {
 					</div>
 					<div className="item-box introbox">
 						<h3>Working History</h3>
-						<div className="flex flex-col gap-10">
+						<div className="intro-text flex flex-col gap-10">
 							{Work.map((item) => (
 								<div
 									key={item.Company}

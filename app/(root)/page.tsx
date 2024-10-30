@@ -9,17 +9,17 @@ const page = () => {
 	return (
 		<div className="container min-h-[800px]">
 			<div className="flex gap-5 justify-center items-center">
-				<div className="text-w flex flex-col gap-10 text-left basis-1/2 max-lg:z-10 max-lg:textshadow">
+				<div className="animate-movel text-w flex flex-col gap-10 text-left basis-1/2 max-lg:z-10 max-lg:textshadow">
 					<h1 className="text-4xl font-sans">
 						{Page_Title.toUpperCase()}
 					</h1>
-					<div className="text-xl font-mono max-lg:text-sm">
+					<div className=" work-sans text-2xl max-lg:text-lg leading-10 ">
 						{Page_Introduction}
 					</div>
 				</div>
 
 				<div className="basis-1/2 w-full flex justify-center items-center max-lg:absolute max-lg:opacity-[0.5] max-lg:mt-10">
-					<div className="relative flex justify-center ">
+					<div className="animate-mover relative flex justify-center ">
 						<Shape />
 						<img
 							className="mb-5 h-[500px] "
