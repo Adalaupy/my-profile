@@ -5,7 +5,6 @@ import Sticky_Fn3 from "../public/projects/Sticky_Notes/edit.gif";
 import Sticky_Fn4 from "../public/projects/Sticky_Notes/delete.gif";
 import Sticky_Fn5 from "../public/projects/Sticky_Notes/filter.gif";
 
-import Asset_Cover from "../public/projects/Asset_Calculation/used.gif";
 import Asset_Fn1 from "../public/projects/Asset_Calculation/used.gif";
 import Asset_Fn2 from "../public/projects/Asset_Calculation/newrecord.gif";
 import Asset_Fn3 from "../public/projects/Asset_Calculation/delete.gif";
@@ -15,20 +14,17 @@ import Asset_Fn6 from "../public/projects/Asset_Calculation/filter.gif";
 import Asset_Fn7 from "../public/projects/Asset_Calculation/calculate.gif";
 import Asset_Fn8 from "../public/projects/Asset_Calculation/color.gif";
 
-import Listen_Cover from "../public/projects/Listening_Split/pause.gif";
 import Listen_Fn1 from "../public/projects/Listening_Split/open.gif";
 import Listen_Fn2 from "../public/projects/Listening_Split/pause.gif";
 import Listen_Fn3 from "../public/projects/Listening_Split/switch.gif";
 import Listen_Fn4 from "../public/projects/Listening_Split/key.gif";
 
-import Compare_Cover from "../public/projects/Media_Compare/submit.gif";
 import Compare_Fn1 from "../public/projects/Media_Compare/UI.gif";
 import Compare_Fn2 from "../public/projects/Media_Compare/showFolder.gif";
 import Compare_Fn3 from "../public/projects/Media_Compare/submit.gif";
 import Compare_Fn4 from "../public/projects/Media_Compare/copy.gif";
 import Compare_Fn5 from "../public/projects/Media_Compare/check.gif";
 
-import Ins_Cover from "../public/projects/IG_Multi_Media/Preview.gif";
 import Ins_Fn1 from "../public/projects/IG_Multi_Media/sessionLogin.gif";
 import Ins_Fn2 from "../public/projects/IG_Multi_Media/usepwLogin.gif";
 import Ins_Fn3 from "../public/projects/IG_Multi_Media/inputcontent.gif";
@@ -38,15 +34,16 @@ import Ins_Fn6 from "../public/projects/IG_Multi_Media/order.gif";
 import Ins_Fn7 from "../public/projects/IG_Multi_Media/post.gif";
 import Ins_Fn8 from "../public/projects/IG_Multi_Media/ins.gif";
 
-import Money_Cover from "../public/projects/Money_App/previewCalend.gif";
 import Money_F1 from "../public/projects/Money_App/addrecord.gif";
 import Money_F2 from "../public/projects/Money_App/updaterecord.gif";
-import Money_F3 from "../public/projects/Money_App/temp.gif";
+import Money_F3 from "../public/projects/Money_App/deleteRecord.gif";
 import Money_F4 from "../public/projects/Money_App/addcate.gif";
 import Money_F5 from "../public/projects/Money_App/enableCate.gif";
-import Money_F6 from "../public/projects/Money_App/chart.gif";
-import Money_F7 from "../public/projects/Money_App/previewCalend.gif";
-import Money_F8 from "../public/projects/Money_App/temp.gif";
+import Money_F6 from "../public/projects/Money_App/renameCate.gif";
+import Money_F7 from "../public/projects/Money_App/chart.gif";
+import Money_F8 from "../public/projects/Money_App/previewCalend.gif";
+import Money_F9 from "../public/projects/Money_App/datefilter.gif";
+import Money_F10 from "../public/projects/Money_App/addJob.gif";
 
 const ProjectDetail = [
 	{
@@ -108,7 +105,7 @@ const ProjectDetail = [
 			"This is Asset Calculation, This Project is created in hope of providing a general overview of my asset as well as keeping a historical financial record, the data and the corresponding charts can be displayed in an HTML page, which also allows us to input some new records, of course you can update and delete records as well",
 		TryMe: "https://adalaupy.github.io/Asset_Calculation_v2/",
 		GithubURL: "https://github.com/Adalaupy/Asset_Calculation_v2/tree/v2",
-		CoverPhoto: Asset_Cover,
+		CoverPhoto: Asset_Fn1,
 		tags: ["React", "HTML", "CSS", "JAVASCRIPT"],
 		detail: {
 			function: [
@@ -182,7 +179,7 @@ const ProjectDetail = [
 		Introduction:
 			"Listening is important for learning a new language, personally speaking, I like to practice it by my playing video on Youtube and use notepad to mark down what I have listened. But in most case, it's quite hard to follow the speed of the video and forced to drag the mouse pointer from notepad to my browser to press a 'stop' button or seek backward, and vice versa to continue. This program is designed for consolidating these several actions into just one step and enhancing your listening practicing efficiency.",
 		GithubURL: "https://github.com/Adalaupy/listening_practice_split",
-		CoverPhoto: Listen_Cover,
+		CoverPhoto: Listen_Fn2,
 		tags: ["Python"],
 		detail: {
 			function: [
@@ -235,7 +232,7 @@ const ProjectDetail = [
 		Introduction:
 			"This project is created for media transfer across different folders, despite the change of the file name, this program can identify whether the items from source folders are already migrated to destination folder by comparing the content inside, if not exists, the files will be automatically transfer to source folder. Multiple Source path and destination path is allowed for each run.",
 		GithubURL: "https://github.com/Adalaupy/folder_media_compare",
-		CoverPhoto: Compare_Cover,
+		CoverPhoto: Compare_Fn3,
 		tags: ["Python"],
 		detail: {
 			function: [
@@ -296,7 +293,7 @@ const ProjectDetail = [
 			"Instagram allow users to upload multiple media at once for each post, however, the photos are automatically cropped if the aspect ratio of them are not consistent. To advoid cropping on Instagram, users have to make sure that all the media that they upload are in the union aspect ratio, or they may resize the photo by using some thrid-party app which take some times to do it. The main purpose of this project is to facilitate the resizing and uploading process. After login, user can choose the photos/video that they need to upload for the same post, this application will automatically resize the photos and video and post them without any cropping.",
 		TryMe: "https://adalaupy.github.io/IG_multi_Media_v2/",
 		GithubURL: "https://github.com/Adalaupy/IG_multi_Media_v2",
-		CoverPhoto: Ins_Cover,
+		CoverPhoto: Ins_Fn5,
 		tags: ["React", "HTML", "CSS", "JAVASCRIPT", "Python"],
 		detail: {
 			function: [
@@ -369,7 +366,7 @@ const ProjectDetail = [
 		Introduction:
 			"This is my first React Native Project (Expo) after I watched some tutorial from Youtube. This App is used for tracking my daily spending and income, besides input the records mannually, it also allows users to set some schedule so that the expense/income will be automatically recorded, this App allow users to do some simple customization such as adding their own Expense category.",
 		GithubURL: "https://github.com/Adalaupy/MoneyApp",
-		CoverPhoto: Money_Cover,
+		CoverPhoto: Money_F8,
 		tags: ["React", "React Native", "Expo", "JAVASCRIPT", "HTML"],
 		detail: {
 			function: [
@@ -388,6 +385,7 @@ const ProjectDetail = [
 					Fn_Text: "Delete your entered Expense / Income",
 					Fn_Img: Money_F3,
 				},
+
 				{
 					fn_ID: 4,
 					Fn_Text: "Customize your own cateogry by adding new one",
@@ -401,21 +399,31 @@ const ProjectDetail = [
 				},
 				{
 					fn_ID: 6,
-					Fn_Text:
-						"summarize your financial situation by chart for different time period",
+					Fn_Text: "Long Press the Current category and rename it ",
 					Fn_Img: Money_F6,
 				},
 				{
 					fn_ID: 7,
 					Fn_Text:
-						"Check your previous Records in both Calendar and List",
+						"summarize your financial situation by chart for different time period",
 					Fn_Img: Money_F7,
 				},
 				{
 					fn_ID: 8,
 					Fn_Text:
-						"set scheduled Income/Expense e.g. salary for automatic input",
+						"Check your previous Records in both Calendar and List",
 					Fn_Img: Money_F8,
+				},
+				{
+					fn_ID: 9,
+					Fn_Text: "You can filter out your records by date",
+					Fn_Img: Money_F9,
+				},
+				{
+					fn_ID: 10,
+					Fn_Text:
+						"set scheduled Income/Expense e.g. salary, for automatic input",
+					Fn_Img: Money_F10,
 				},
 			],
 			packages: [

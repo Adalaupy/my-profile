@@ -121,6 +121,6 @@ body {
 	}
 
 	.arrow {
-		@apply max-lg:text-2xl text-5xl text-w cursor-pointer hover_scale;
+		@apply max-lg:text-4xl text-5xl text-w cursor-pointer hover_scale;
 	}
 }

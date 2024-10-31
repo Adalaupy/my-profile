@@ -24,7 +24,7 @@ const ProjectLang = ({ lang }: { lang: string[] }) => {
 						<div
 							key={index}
 							style={{ backgroundColor: Fn_Code_color(item) }}
-							className="textshadow3 rounded-2xl p-4 min-w-28 text-w text-center font-bold"
+							className="textshadow3 rounded-2xl p-4 max-lg:p-3 max-lg:text-sm min-w-28 text-w text-center font-bold"
 						>
 							{item.toUpperCase()}
 						</div>
