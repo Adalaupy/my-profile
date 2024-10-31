@@ -3,6 +3,8 @@ import Skill from "../../../constants/Skills.json";
 import Cert from "../../../constants/Cert.json";
 import Work from "../../../constants/WorkHistory.json";
 import Me from "@/public/images/profile.jpg";
+import Image from "next/image";
+
 const page = () => {
 	const Self_Introduction =
 		"I am a self-motivated and responsible person who graduated in City University of Hong Kong specialising in Business Analysis. In order to enhance my ability of teamwork and adaptability, I have also applied different part-time job and internship program to jack up my experiences and learnt some skills that out of my major. I am now working as a Data Engineer, and I sincerely hope that my application will be accepted.";
@@ -12,12 +14,16 @@ const page = () => {
 	return (
 		<div className="container">
 			<div className="flex justify-center lg:items-start gap-10 max-lg:flex-col max-lg:items-center">
-				<div className="item-box basis-1/4 flex flex-col justify-center items-center">
-					<img
-						className="intro-text mb-5 h-56 object-cover"
-						src={Me.src}
-						alt="my-pic"
-					/>
+				<div className=" item-box basis-1/4 flex flex-col justify-center items-center">
+					<div className="h-56 relative w-full">
+						<Image
+							src={Me.src}
+							alt="my-pic"
+							fill
+							objectFit="contain"
+						/>
+					</div>
+
 					<h3>Profile photo</h3>
 				</div>
 
@@ -62,7 +68,7 @@ const page = () => {
 									className="flex justify-between"
 								>
 									<div className="basis-1/4">{item.Date}</div>
-									<div className="font-bold basis-3/4 text-end">
+									<div className="max-lg:text-sm font-bold basis-3/4 text-end">
 										{item.Desc}
 									</div>
 								</div>
@@ -76,10 +82,10 @@ const page = () => {
 							{Skill.map((item) => (
 								<div
 									key={item.skill}
-									className="flex justify-between"
+									className="flex justify-between max-lg:text-[16px]"
 								>
-									<div className="">{item.skill}</div>
-									<div className="">
+									<div>{item.skill}</div>
+									<div>
 										{"⚫".repeat(item.familiarity)}
 										{"⚪".repeat(5 - item.familiarity)}
 									</div>
@@ -118,7 +124,7 @@ const page = () => {
 											</span>
 										</div>
 
-										<ul className="flex flex-col gap-3 list-outside list-disc text-lg max-lg:text-sm">
+										<ul className="flex flex-col gap-3 list-outside list-disc text-lg max-lg:text-[15px]">
 											{item.Job.map((duty) => (
 												<li key={duty}>{duty}</li>
 											))}

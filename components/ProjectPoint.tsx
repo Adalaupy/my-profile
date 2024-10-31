@@ -14,7 +14,7 @@ const ProjectPoint = ({
 				<ul
 					className={clsx(
 						"pl-10 pr-10 text-xl max-lg:text-sm",
-						title == "Installed Packages" && "columns-2"
+						title == "Installed Packages" && "lg:columns-2"
 					)}
 				>
 					{pointList.map((item, index) => (

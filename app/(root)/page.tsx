@@ -1,6 +1,6 @@
 import Shape from "@/components/Shape";
 import Me from "@/public/images/homepage.png";
-
+import Image from "next/image";
 const page = () => {
 	const Page_Title = "Hello World!";
 	const Page_Introduction =
@@ -19,13 +19,15 @@ const page = () => {
 				</div>
 
 				<div className="basis-1/2 w-full flex justify-center items-center max-lg:absolute max-lg:opacity-[0.5] max-lg:mt-10">
-					<div className="animate-mover relative flex justify-center ">
-						<Shape />
-						<img
-							className="mb-5 h-[500px] "
+					<div className="animate-mover relative flex justify-center mt-5 lg:ml-10">
+						<Image
 							src={Me.src}
 							alt="my-pic"
+							objectFit="contain"
+							height={500}
+							width={175}
 						/>
+						<Shape />
 					</div>
 				</div>
 			</div>

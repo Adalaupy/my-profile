@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 const Shape = () => {
 	const shapeList = Array.from({ length: 10 }, (_, index) => index);
 

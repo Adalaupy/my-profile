@@ -82,7 +82,7 @@ body {
 
 	input,
 	textarea {
-		@apply pt-2 pb-2 pl-5 pr-5 rounded-lg border-2 border-['#fff'] bg-transparent text-w w-96 text-sm;
+		@apply pt-2 pb-2 pl-5 pr-5 rounded-lg border-[1px] border-['#fff'] bg-transparent text-w w-96 text-xs;
 	}
 }
 
@@ -125,6 +125,6 @@ body {
 	}
 
 	.arrow {
-		@apply max-lg:text-4xl text-5xl text-w cursor-pointer hover_scale;
+		@apply max-lg:text-4xl text-5xl text-w cursor-pointer hover_scale basis-1/6 flex justify-center;
 	}
 }

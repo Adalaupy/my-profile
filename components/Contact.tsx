@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { SendEmail } from "../api/email";
-import ButtonURL from "./ButtonURL";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
