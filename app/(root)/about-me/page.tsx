@@ -15,7 +15,7 @@ const page = () => {
 		<div className="container">
 			<div className="flex justify-center lg:items-start gap-10 max-lg:flex-col max-lg:items-center">
 				<div className="gap-5 item-box basis-1/4 flex flex-col justify-center items-center ">
-					<div className="h-56 relative w-full ">
+					<div className="animate-movel2 h-56 relative w-full ">
 						<Image
 							src={Me.src}
 							alt="my-pic"

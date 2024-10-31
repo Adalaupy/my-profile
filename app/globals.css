@@ -111,11 +111,11 @@ body {
 	}
 
 	h3 {
-		@apply text-2xl font-bold font-serif max-lg:text-xl;
+		@apply text-2xl font-bold font-serif max-lg:text-xl animate-mover;
 	}
 
 	.introbox {
-		@apply item-box text-left text-lg flex flex-col gap-10 max-lg:text-lg;
+		@apply item-box text-left text-lg flex flex-col gap-10 max-lg:text-lg max-lg:gap-5;
 	}
 	.intro-text {
 		@apply animate-movel2;
