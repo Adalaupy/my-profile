@@ -66,7 +66,7 @@ const Navbar = () => {
 
 			<div className="absolute right-9 top-8 lg:hidden ">
 				<div
-					className="text-3xl p-2 shadow3 rounded-full"
+					className="text-3xl p-2 shadow rounded-full"
 					onClick={() => {
 						setisOpen((prev) => !prev);
 					}}

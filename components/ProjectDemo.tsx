@@ -64,9 +64,14 @@ const ProjectDemo = ({
 
 						<div
 							onClick={() => setisClickImg(true)}
-							className="basis-4/6 animate-zoomIn min-h-72 cursor-pointer hover_scale2 flex justify-center"
+							className={clsx(
+								"basis-4/6 animate-zoomIn cursor-pointer hover_scale2 flex justify-center",
+								Curr_Fn?.Fn_Img.height > Curr_Fn?.Fn_Img.width
+									? "max-lg:min-h-72 min-h-96"
+									: "max-lg:min-h-40 min-h-72"
+							)}
 						>
-							<div className="w-full max-h-[500px] relative rounded-lg ">
+							<div className="w-full max-h-[500px] relative rounded-lg">
 								<Image
 									unoptimized
 									className="object-contain"

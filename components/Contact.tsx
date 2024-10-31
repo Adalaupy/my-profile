@@ -13,9 +13,7 @@ const Contact = () => {
 
 	const Fn_SendEmail = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-
 		SendEmail({ FirstName, LastName, Message, Email });
-
 		setFirstName("");
 		setLastName("");
 		setEmail("");
@@ -102,9 +100,9 @@ const Contact = () => {
 						}}
 					/>
 
-					<div className="mb-10 hover_scale2  ">
+					<div className="mb-10 hover_scale2">
 						<input
-							className="cursor-pointer"
+							className="cursor-pointer submit_btn border-[1px] border-w p-3 pl-5 pr-5 rounded-lg shadow tracking-wide work-sans2"
 							id="submit"
 							type="submit"
 							value="Submit"

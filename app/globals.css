@@ -61,7 +61,7 @@ body {
 		0px 1px 5px #131213e2, 0px -1px 2px #131213e2;
 }
 
-.shadow3 {
+.shadow {
 	box-shadow: inset 0 0 15px rgba(241, 217, 217, 0.7),
 		0 0 35px rgba(33, 33, 33, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -75,14 +75,21 @@ body {
 	font-style: italic;
 }
 
+.work-sans2 {
+	font-family: "Work Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
 @layer base {
 	html {
 		@apply scroll-pt-8;
 	}
 
-	input,
+	input:not(.submit_btn),
 	textarea {
-		@apply pt-2 pb-2 pl-5 pr-5 rounded-lg border-[1px] border-['#fff'] bg-transparent text-w w-96 text-xs;
+		@apply pt-2 pb-2 pl-5 pr-5 rounded-lg border-[1px] border-['#fff'] bg-transparent text-w w-96 text-xs font-bold tracking-wider;
 	}
 }
 
@@ -111,14 +118,14 @@ body {
 	}
 
 	h3 {
-		@apply text-2xl font-bold font-serif max-lg:text-xl animate-mover;
+		@apply text-2xl font-bold font-serif max-lg:text-xl animate-mover max-lg:mt-5;
 	}
 
 	.introbox {
 		@apply item-box text-left text-lg flex flex-col gap-10 max-lg:text-lg max-lg:gap-5;
 	}
 	.intro-text {
-		@apply animate-movel2;
+		@apply animate-movel2 max-lg:mb-5;
 	}
 	.btn1 {
 		@apply rounded-2xl p-4 w-36 max-lg:p-2 text-[16px] max-lg:text-sm font-semibold shadow-xl font-sans cursor-pointer border-dashed border-2 border-[#6b6969] flex justify-center items-center gap-2;
