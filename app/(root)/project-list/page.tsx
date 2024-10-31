@@ -16,12 +16,12 @@ const page = () => {
 					>
 						<h3 className="font-sans">{project.Name}</h3>
 
-						<div className="relative w-full rounded-xl lg:h-[400px] max-lg:h-[200px] object-contain shadow-inner bg2">
+						<div className="relative w-full rounded-xl lg:h-[400px] max-lg:h-[200px] shadow-inner bg2">
 							<Image
 								src={project.CoverPhoto.src}
 								alt={project.Name}
 								fill
-								objectFit="contain"
+								className="object-contain"
 							/>
 						</div>
 						<div className=" flex  items-center justify-center gap-8 max-lg:gap-5 max-lg:flex-col">

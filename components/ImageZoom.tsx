@@ -27,12 +27,12 @@ const ImageZoom = ({
 			>
 				<Image
 					className={clsx(
+						"object-contain",
 						Height < Width ? "lg:p-32 max-lg:p-3" : "lg:p-5"
 					)}
 					src={imgPath}
 					alt="function-img"
 					fill
-					objectFit="contain"
 				/>
 			</div>
 		</div>

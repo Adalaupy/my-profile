@@ -75,10 +75,10 @@ const ProjectDemo = ({
 						>
 							<div className="w-full max-h-[500px] relative rounded-lg ">
 								<Image
+									className="object-contain"
 									src={Curr_Fn?.Fn_Img.src}
 									alt="function-img"
 									fill
-									objectFit="contain"
 								/>
 							</div>
 						</div>
