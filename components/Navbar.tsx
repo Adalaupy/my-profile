@@ -64,14 +64,17 @@ const Navbar = () => {
 
 			{/* Mobile */}
 
-			<div className="absolute right-9 top-8 lg:hidden">
+			<div className="absolute right-9 top-8 lg:hidden ">
 				<div
-					className="cursor-pointer"
+					className="text-3xl p-2 shadow3 rounded-full"
 					onClick={() => {
 						setisOpen((prev) => !prev);
 					}}
 				>
-					<PiNavigationArrowFill />
+					<PiNavigationArrowFill
+						strokeWidth={20}
+						stroke="#585258e2"
+					/>
 				</div>
 			</div>
 		</div>

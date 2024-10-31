@@ -61,6 +61,10 @@ body {
 		0px 1px 5px #131213e2, 0px -1px 2px #131213e2;
 }
 
+.shadow3 {
+	box-shadow: inset 0 0 15px rgba(241, 217, 217, 0.7),
+		0 0 35px rgba(33, 33, 33, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
 .img-zoom {
 	background: rgba(8, 0, 0, 0.8);
 }
