@@ -26,9 +26,13 @@ const page = () => {
 				<div className=" flex flex-col gap-16 ">
 					<ProjectDemo projectfunctions={project.detail.function} />
 					<ProjectLang lang={project.tags} />
-					<ProjectPoint pointList={project.detail.packages} />
+					<ProjectPoint
+						title="Installed Packages"
+						pointList={project.detail.packages}
+					/>
 
 					<ProjectPoint
+						title="Challenges and Improvements"
 						pointList={project.detail.challenge_improvement}
 					/>
 					<ProjectURL

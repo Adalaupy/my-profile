@@ -1,9 +1,22 @@
-const ProjectPoint = ({ pointList }: { pointList: string[] }) => {
+import clsx from "clsx";
+
+const ProjectPoint = ({
+	pointList,
+	title,
+}: {
+	pointList: string[];
+	title: string;
+}) => {
 	return (
 		<div>
-			<h4>Installed Packages</h4>
+			<h4>{title}</h4>
 			<div className="item-box2 ">
-				<ul className="pl-10 pr-10 text-xl max-lg:text-sm ">
+				<ul
+					className={clsx(
+						"pl-10 pr-10 text-xl max-lg:text-sm",
+						title == "Installed Packages" && "columns-2"
+					)}
+				>
 					{pointList.map((item, index) => (
 						<li
 							key={index}
