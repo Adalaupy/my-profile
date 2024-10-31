@@ -64,17 +64,11 @@ const ProjectDemo = ({
 
 						<div
 							onClick={() => setisClickImg(true)}
-							// style={{
-							// 	flexBasis:
-							// 		Curr_Fn?.Fn_Img.width >
-							// 		Curr_Fn?.Fn_Img.height
-							// 			? "66.666667%;"
-							// 			: "40%",
-							// }}
 							className="basis-4/6 animate-zoomIn min-h-72 cursor-pointer hover_scale2 flex justify-center"
 						>
 							<div className="w-full max-h-[500px] relative rounded-lg ">
 								<Image
+									unoptimized
 									className="object-contain"
 									src={Curr_Fn?.Fn_Img.src}
 									alt="function-img"
