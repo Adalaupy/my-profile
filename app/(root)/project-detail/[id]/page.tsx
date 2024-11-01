@@ -22,6 +22,10 @@ const ProjectDetailPage = async ({ params }: { params: { id: string } }) => {
 
 	const project = ProjectDetail.find((project) => project.id === Number(id))!;
 
+	if (!project) {
+		return <div>Project not found</div>; // Handle case where project is not found
+	}
+
 	return (
 		<div className="container">
 			<div className="flex flex-col text-left gap-5">
