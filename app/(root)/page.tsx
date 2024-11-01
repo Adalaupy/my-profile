@@ -1,6 +1,7 @@
 import Shape from "@/components/Shape";
-import Me from "@/public/images/homepage.png";
+import HomePage from "@/public/images/homepage.png";
 import Image from "next/image";
+
 const page = () => {
 	const Page_Title = "Hello World!";
 	const Page_Introduction =
@@ -23,7 +24,7 @@ const page = () => {
 						<Image
 							unoptimized
 							className=" object-contain"
-							src={Me.src}
+							src={HomePage.src}
 							alt="my-pic"
 							height={500}
 							width={175}
