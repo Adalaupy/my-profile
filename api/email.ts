@@ -19,6 +19,8 @@ export const SendEmail = ({
 	const ServiceID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string;
 	const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY as string;
 
+	console.log(myEmail);
+
 	const EmailContent = {
 		from_name: `${FirstName} ${LastName}`,
 		to_name: "Ada",
@@ -36,7 +38,7 @@ export const SendEmail = ({
 
 				function (error) {
 					alert(
-						"Your message has been sent failed! \n Please contact me through laupy10598@gmail.com . "
+						`our message has been sent failed! \n Please contact me through ${myEmail} . `
 					);
 				}
 		  );
