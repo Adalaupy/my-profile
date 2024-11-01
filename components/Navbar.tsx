@@ -4,6 +4,7 @@ import { useState } from "react";
 import ProjectDetail from "../constants/ProjectData";
 import { PiNavigationArrowFill } from "react-icons/pi";
 import clsx from "clsx";
+import Link from "next/link";
 
 const Navbar = () => {
 	const NavItemList = [
@@ -40,20 +41,20 @@ const Navbar = () => {
 						}}
 						className=" after:bg-w hover_underline relative flex justify-center cursor-pointer"
 					>
-						<a className="z-30" href={item.redirect}>
+						<Link className="z-30" href={item.redirect}>
 							{item.label}
-						</a>
+						</Link>
 						{isProjectHover && item.label === "My Project" && (
 							<div className="max-lg:hidden absolute pt-16 w-[250px] ">
 								<div className="flex flex-col gap-5 text-lg font-semibold textshadow bg3">
 									{ProjectDetail.map((proj) => (
-										<a
+										<Link
 											href={`/project-detail/${proj.id}`}
 											key={proj.id}
 											className="hover_scale "
 										>
 											{proj.Name}
-										</a>
+										</Link>
 									))}
 								</div>
 							</div>
