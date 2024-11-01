@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	// output: "export",
-	// basePath: "/my-profile",
-	// reactStrictMode: true,
+	output: "export",
+	basePath: "/my-profile",
+	reactStrictMode: true,
 	images: {
 		localPatterns: [
 			{
-				pathname: "/public/**",
+				pathname: "/images/**",
+				search: "",
+			},
+			{
+				pathname: "/projects/**",
 				search: "",
 			},
 		],
