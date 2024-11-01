@@ -18,6 +18,7 @@ const page = () => {
 
 						<div className="relative w-full rounded-xl lg:h-[400px] max-lg:h-[200px] shadow-inner bg2">
 							<Image
+								unoptimized
 								src={project.CoverPhoto.src}
 								alt={project.Name}
 								fill

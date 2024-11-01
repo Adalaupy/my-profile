@@ -34,14 +34,9 @@ const config: Config = {
 
 				movel: {
 					"0%": {
-						transform: "translateX(-500%)",
+						transform: "translateX(-800%)",
 						opacity: "0",
-						scale: "0.5",
-					},
-					"30%": {
-						transform: "translateX(-500%)",
-						opacity: "0",
-						scale: "0.5",
+						scale: "0",
 					},
 
 					"100%": {

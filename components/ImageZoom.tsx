@@ -33,6 +33,7 @@ const ImageZoom = ({
 					src={imgPath}
 					alt="function-img"
 					fill
+					unoptimized
 				/>
 			</div>
 		</div>
