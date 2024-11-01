@@ -3,7 +3,7 @@
 const nextConfig = {
 	output: "export",
 	// assetPrefix: "/",
-	// basePath: "/my-profile",
+	basePath: "/my-profile",
 	// reactStrictMode: false,
 };
 
