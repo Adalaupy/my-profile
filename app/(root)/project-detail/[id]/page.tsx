@@ -5,9 +5,7 @@ import ProjectURL from "@/components/ProjectURL";
 import ProjectLang from "@/components/ProjectLang";
 
 export function generateStaticParams() {
-	return ProjectDetail.map((project) => ({
-		params: { id: project.id.toString() },
-	}));
+	return ProjectDetail.map((project) => ({ id: project.id.toString() }));
 }
 
 const ProjectDetailPage = async ({ params }: { params: { id: string } }) => {
