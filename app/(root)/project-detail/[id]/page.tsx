@@ -1,6 +1,3 @@
-// "use client";
-// import { useParams } from "next/navigation";
-
 import ProjectDetail from "@/constants/ProjectData";
 import ProjectDemo from "@/components/ProjectDemo";
 import ProjectPoint from "@/components/ProjectPoint";
@@ -14,17 +11,10 @@ export function generateStaticParams() {
 	}));
 }
 
-// const ProjectDetailPage = () => {
-// 	const { id } = useParams();y
-
 const ProjectDetailPage = async ({ params }: { params: { id: string } }) => {
 	const { id } = params;
 
 	const project = ProjectDetail.find((project) => project.id === Number(id))!;
-
-	if (!project) {
-		return <div>Project not found</div>; // Handle case where project is not found
-	}
 
 	return (
 		<div className="container">
