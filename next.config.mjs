@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-	output: "export",
-	basePath: "/my-profile",
+	// output: "export",
+	// assetPrefix: "/",
+	// basePath: "/my-profile",
+	// reactStrictMode: false,
 };
 
 export default nextConfig;
