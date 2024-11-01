@@ -26,7 +26,7 @@ const ProjectDetailPage = async ({ params }: { params: { id: string } }) => {
 		<div className="container">
 			<div className="flex flex-col text-left gap-5">
 				<h1 className="max-lg:text-2xl text-4xl font-bold text-w mb-10 underline underline-offset-[10px]">
-					{project?.Name}
+					{id} {project?.Name}
 				</h1>
 
 				<div className="text-w text-xl max-lg:text-lg font-mono mb-16">
