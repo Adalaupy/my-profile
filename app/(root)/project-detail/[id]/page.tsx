@@ -5,6 +5,8 @@ import ProjectPoint from "@/components/ProjectPoint";
 import ProjectURL from "@/components/ProjectURL";
 import ProjectLang from "@/components/ProjectLang";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
 	return ProjectDetail.map((project) => ({
 		params: { id: project.id.toString() },
