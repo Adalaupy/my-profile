@@ -4,6 +4,7 @@ import { useState } from "react";
 import { SendEmail } from "../api/email";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const Contact = () => {
 	const [FirstName, setFirstName] = useState("");
@@ -32,21 +33,21 @@ const Contact = () => {
 					</h1>
 
 					<div className="text-w flex justify-center items-center gap-10 pb-10 mt-10 max-lg:text-xs ">
-						<a
+						<Link
 							href="https://github.com/Adalaupy/"
 							className="flex justify-center items-center gap-2"
 						>
 							<FaGithub />
 							Github
-						</a>
+						</Link>
 
-						<a
+						<Link
 							className="flex justify-center items-center gap-2"
 							href="https://www.linkedin.com/in/ada-l-729728227/"
 						>
 							<FaLinkedin />
 							LinkedIn
-						</a>
+						</Link>
 					</div>
 				</div>
 				<form

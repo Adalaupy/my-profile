@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ButtonURL = ({
 	url,
 	content,
@@ -10,16 +12,16 @@ const ButtonURL = ({
 	return (
 		<div>
 			{content === "Detail Page" ? (
-				<a
+				<Link
 					className="btn1 hover_scale2"
 					rel="noopener noreferrer"
 					href={url}
 				>
 					{children}
 					{content}
-				</a>
+				</Link>
 			) : (
-				<a
+				<Link
 					className="btn1 hover_scale2"
 					rel="noopener noreferrer"
 					target="_blank"
@@ -27,7 +29,7 @@ const ButtonURL = ({
 				>
 					{children}
 					{content}
-				</a>
+				</Link>
 			)}
 		</div>
 	);
