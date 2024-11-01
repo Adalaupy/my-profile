@@ -8,7 +8,7 @@ import ProjectPoint from "@/components/ProjectPoint";
 import ProjectURL from "@/components/ProjectURL";
 import ProjectLang from "@/components/ProjectLang";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
 	return ProjectDetail.map((project) => ({
 		params: { id: project.id.toString() },
 	}));
