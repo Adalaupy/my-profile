@@ -1,6 +1,6 @@
-"use client";
+// "use client";
+// import { useParams } from "next/navigation";
 
-import { useParams } from "next/navigation";
 import ProjectDetail from "@/constants/ProjectData";
 import ProjectDemo from "@/components/ProjectDemo";
 import ProjectPoint from "@/components/ProjectPoint";
@@ -8,8 +8,16 @@ import ProjectPoint from "@/components/ProjectPoint";
 import ProjectURL from "@/components/ProjectURL";
 import ProjectLang from "@/components/ProjectLang";
 
-const ProjectDetailPage = () => {
-	const { id } = useParams();
+export function generateStaticParams() {
+	return ProjectDetail.map((project) => ({
+		params: { id: project.id.toString() },
+	}));
+}
+// const ProjectDetailPage = () => {
+// 	const { id } = useParams();y
+
+const ProjectDetailPage = async ({ params }: { params: { id: string } }) => {
+	const { id } = params;
 
 	const project = ProjectDetail.find((project) => project.id === Number(id))!;
 
