@@ -8,7 +8,7 @@ import ProjectPoint from "@/components/ProjectPoint";
 import ProjectURL from "@/components/ProjectURL";
 import ProjectLang from "@/components/ProjectLang";
 
-const page = () => {
+const ProjectDetailPage = () => {
 	const { id } = useParams();
 
 	const project = ProjectDetail.find((project) => project.id === Number(id))!;
@@ -45,4 +45,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default ProjectDetailPage;
