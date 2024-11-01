@@ -14,7 +14,7 @@ import Asset_Fn6 from "../public/projects/Asset_Calculation/filter.gif";
 import Asset_Fn7 from "../public/projects/Asset_Calculation/calculate.gif";
 import Asset_Fn8 from "../public/projects/Asset_Calculation/color.gif";
 
-import Listen_Fn1 from "../public/projects/Listening_Split/open.gif";
+import Listen_Fn1 from "../public/projects/Listening_Split/Open.gif";
 import Listen_Fn2 from "../public/projects/Listening_Split/pause.gif";
 import Listen_Fn3 from "../public/projects/Listening_Split/switch.gif";
 import Listen_Fn4 from "../public/projects/Listening_Split/key.gif";
