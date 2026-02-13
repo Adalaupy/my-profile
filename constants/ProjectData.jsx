@@ -491,6 +491,12 @@ const ProjectDetail = [
 				},				
 
 			],
+			packages: [
+				"streamlit",
+				"openpyxl",
+				"pandasql",
+				"streamlit_code_editor",
+			],			
 			challenge_improvement: [
 				"File type is limited to csv, xlsx, xls, parquet",
 				"Cannot process large dataset",
