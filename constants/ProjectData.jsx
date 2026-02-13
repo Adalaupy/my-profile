@@ -53,6 +53,14 @@ import SQL_Fn3 from '../public/projects/Quick_Sheet_SQL/sql.gif';
 import SQL_Fn4 from '../public/projects/Quick_Sheet_SQL/save.gif';
 import SQL_Fn5 from '../public/projects/Quick_Sheet_SQL/download.gif';
 
+// Added at 20260213
+import CP_Fn1 from '../public/projects/Carpark_Search/info.gif';
+import CP_Fn2 from '../public/projects/Carpark_Search/detail.gif';
+import CP_Fn3 from '../public/projects/Carpark_Search/filter.gif';
+import CP_Fn4 from '../public/projects/Carpark_Search/map.gif';
+import CP_Fn5 from '../public/projects/Carpark_Search/color.gif';
+
+
 
 const ProjectDetail = [
 	{
@@ -504,6 +512,59 @@ const ProjectDetail = [
 			],
 		},
 	},	
+
+	{
+		id: 8,
+		Name: "Car park Search",
+		Introduction:
+			"Hong Kong Car Park Explorer is a simple Streamlit web app that fetches car park information and vacancy data from the Hong Kong Government Data API (data.gov.hk). It displays basic car park details together with current vacancy status, and provides filtering and interactive map visualization.",
+		TryMe: "https://hk-carpark-search.streamlit.app/",
+		GithubURL: "https://github.com/Adalaupy/Carpark-Search",
+		CoverPhoto: CP_Fn1, 
+		tags: ["Python"],
+		detail: {
+			function: [
+				{
+					fn_ID: 1,
+					Fn_Text: "Fetches real-time car park information and vacancy data from Hong Kong Government open API",
+					Fn_Img: CP_Fn1,
+				},
+				{
+					fn_ID: 2,
+					Fn_Text: "Displays key details for each car park: name, address, district, type, opening hours/status, total spaces, current vacancies, price",
+					Fn_Img: CP_Fn2,
+				},			
+				{
+					fn_ID: 3,
+					Fn_Text: "Interactive filtering options",
+					Fn_Img: CP_Fn3,
+				},		
+				{
+					fn_ID: 4,
+					Fn_Text: "Plots car parks on an map",
+					Fn_Img: CP_Fn4,
+				},		
+				{
+					fn_ID: 5,
+					Fn_Text: "Color-coded markers to distinguish different car parks",
+					Fn_Img: CP_Fn5,
+				},						
+			],
+			packages: [
+				"streamlit",
+			],
+			challenge_improvement: [
+				"Car park details and map markers are not clickable (no navigation to Google Maps / detailed popup / directions)",
+				"No auto-refresh for real-time vacancy updates",
+				"Only 4 filter options current — consider adding more",
+				"Sidebar rendering delay when filtering datasets due to Streamlit limitation",
+				"App is built in dark mode only (no light mode / theme toggle support)",
+				"No closest distance calculation (cannot show/sort by distance from user location)",
+
+			],
+		},
+	},	
+
 	
 ];
 
