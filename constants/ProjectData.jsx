@@ -45,6 +45,15 @@ import Money_F8 from "../public/projects/Money_App/previewCalend.gif";
 import Money_F9 from "../public/projects/Money_App/datefilter.gif";
 import Money_F10 from "../public/projects/Money_App/addJob.gif";
 
+
+// Added at 20260213
+import SQL_Fn1 from '../public/projects/Quick_Sheet_SQL/upload.gif';
+import SQL_Fn2 from '../public/projects/Quick_Sheet_SQL/preview.gif';
+import SQL_Fn3 from '../public/projects/Quick_Sheet_SQL/sql.gif';
+import SQL_Fn4 from '../public/projects/Quick_Sheet_SQL/save.gif';
+import SQL_Fn5 from '../public/projects/Quick_Sheet_SQL/download.gif';
+
+
 const ProjectDetail = [
 	{
 		id: 1,
@@ -439,6 +448,57 @@ const ProjectDetail = [
 			],
 		},
 	},
+	// Added at 20260213
+	{
+		id: 7,
+		Name: "Quick Sheet SQL",
+		Introduction:
+			"Streamlit web app for uploading CSV, Parquet, or Excel files, querying them with SQL (pandasql), saving results as named dataframes for further queries, and downloading results as CSV.",
+		TryMe: "https://quick-sheet-sql.streamlit.app/",
+		GithubURL: "https://github.com/Adalaupy/Quick-Sheet-SQL",
+		CoverPhoto: SQL_Fn3,
+		tags: ["Python"],
+		detail: {
+			function: [
+				{
+					fn_ID: 1,
+					Fn_Text: "Upload multiple files at once (CSV, .parquet, .xlsx/.xls)",
+					Fn_Img:SQL_Fn1,
+				},
+
+				{
+					fn_ID: 2,
+					Fn_Text: "Auto-register uploaded files as queryable tables with preview function",
+					Fn_Img: SQL_Fn2,
+				},
+				
+				{
+					fn_ID: 3,
+					Fn_Text: "Write and run SQL queries using pandasql (SQLite syntax) + Preview results",
+					Fn_Img: SQL_Fn3,
+				},
+
+				{
+					fn_ID: 4,
+					Fn_Text: "Save query results as persistent named dataframes in session state",
+					Fn_Img: SQL_Fn4,
+				},
+
+				{
+					fn_ID: 5,
+					Fn_Text: "Download any result table as CSV",
+					Fn_Img: SQL_Fn5,
+				},				
+
+			],
+			challenge_improvement: [
+				"File type is limited to csv, xlsx, xls, parquet",
+				"Cannot process large dataset",
+				"Only SQLite Engine available",
+			],
+		},
+	},	
+	
 ];
 
 export default ProjectDetail;
