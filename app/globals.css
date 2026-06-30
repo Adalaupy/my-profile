@@ -46,8 +46,7 @@ body {
 }
 
 .textshadow {
-	text-shadow: 5px 0px 10px #050505, -5px 0 10px #050505, 0px 5px 10px #050505,
-		0px -5px 10px #050505;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65), 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
 .textshadow2 {
@@ -98,7 +97,7 @@ body {
 		@apply border-2 border-dashed rounded-3xl p-5 pt-10 pb-10 mt-10;
 	}
 	.container {
-		@apply p-20 max-lg:pl-5 max-lg:pr-5  w-full flex mx-auto my-auto;
+		@apply p-2 pt-10  lg:pt-10 max-lg:pl-5 max-lg:pr-5  w-full flex mx-auto my-auto;
 	}
 
 	.hover_scale {
@@ -125,10 +124,10 @@ body {
 		@apply item-box text-left text-lg flex flex-col gap-10 max-lg:text-lg max-lg:gap-5;
 	}
 	.intro-text {
-		@apply animate-movel2 max-lg:mb-5;
+		@apply animate-movel2 max-lg:mb-5 ;
 	}
 	.btn1 {
-		@apply rounded-2xl p-4 w-36 max-lg:p-2 text-[16px] max-lg:text-sm font-semibold shadow-xl font-sans cursor-pointer border-dashed border-2 border-[#6b6969] flex justify-center items-center gap-2;
+		@apply rounded-2xl pt-4 pb-4 pl-2 pr-2 w-36 max-lg:p-2 text-[16px] max-lg:text-sm font-semibold shadow-xl font-sans cursor-pointer border-dashed border-2 border-[#6b6969] flex justify-center items-center gap-2;
 	}
 
 	.arrow {

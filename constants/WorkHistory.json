@@ -1,47 +1,21 @@
 [
     {
-        "FromYear": 2018,
+        "FromYear": 2023,
         "FromMonth": 6,
-        "ToYear": 2019,
-        "ToMonth": 1,
-        "Title": "Data Entry Clerk (Part Time)",
-        "Company": "Tencent",
-        "isUsed": true,
-        "Job": [
-            "Prepared materials for events",
-            "Entered data",
-            "Rated and label the video of the Apps (Voov)"
-        ]
-    },
-    {
-        "FromYear": 2020,
-        "FromMonth": 6,
-        "ToYear": 2022,
-        "ToMonth": 7,
-        "Title": "Senior Data Programmer",
-        "Company": "Centaline Data Technology Limited",
-        "isUsed": true,
-        "Job": [
-            "Data maintenance for daily operation, such as Website",
-            "Gather users’ requirements and acquire data from multiple systems/departments",
-            "Plan on data logic, data flow and data structure for new application system",
-            "Work with front-end developers on data organizing and quality assurance",
-            "Apply data modelling to identify company’ opportunity",
-            "Prepare dashboard for reporting"
-        ]
-    },
-    {
-        "FromYear": 2019,
-        "FromMonth": 4,
-        "ToYear": 2020,
+        "ToYear": 2026,
         "ToMonth": 6,
-        "Title": "Administrative Assistant Clerk (Part Time)",
-        "Company": "Midas Innovation, Hong Kong",
+        "Title": "Data Engineer | Senior Data Engineer",
+        "Company": "Sino Administration Services Limited",
         "isUsed": true,
         "Job": [
-            "Video, Photo editing",
-            "Planning events",
-            "Communicating with clients"
+            "Revamped leasing system data platform using Azure Synapse Analytics",
+            "Communicated with backend developers and business users to understand business logic, database architecture, and reporting needs",
+            "Ensured consistency between new and legacy data environments",
+            "Designed data ingestion flows from source systems into Azure Lakehouse",
+            "Built ETL pipelines using SQL, Python, and Spark",
+            "Translated reporting needs into optimized gold-zone table schemas",
+            "Verified data accuracy and integrity from a backend data perspective",
+            "Performed reconciliation between new systems and Azure Lakehouse"
         ]
     },
     {
@@ -53,13 +27,29 @@
         "Company": "DBS Bank",
         "isUsed": true,
         "Job": [
-            "Communicate with users and understand their’s needs and business domain knowledge",
-            "Define metadata based on users’ requirements and data architecture through collibra",
-            "Acquire data from s3 buckets and explore the data logic",
-            "Process data and build data pipelines",
-            "Use airflow to set regular jobs schedule for bank compaigns use",
-            "Design data architecture and plan on data flow",
-            "Conversion of SAS Code to Python"
+            "Orchestrated data pipelines for bank marketing campaigns",
+            "Gathered campaign rules and expected outcomes from business stakeholders and executed ETL processes",
+            "Calculated client portfolio positions including P&L, cost of equity, and equity holdings",
+            "Integrated equity data from legacy and modern systems",
+            "Converted legacy SAS code to Python (Spark)",
+            "Designed tables and documented metadata in Collibra"
+        ]
+    },
+    {
+        "FromYear": 2020,
+        "FromMonth": 6,
+        "ToYear": 2022,
+        "ToMonth": 7,
+        "Title": "Data Programmer | Senior Data Programmer",
+        "Company": "Centaline Data Technology Limited",
+        "isUsed": true,
+        "Job": [
+            "Maintained daily operational data feeds for website and internal systems",
+            "Gathered user requirements and sourced data from multiple departments and systems to build data warehouse",
+            "Planned data logic, flows, and structures for new application systems",
+            "Collaborated with front-end developers on data organization and quality assurance",
+            "Applied data modeling to identify business opportunities",
+            "Built reporting dashboards (Tableau)"
         ]
     }
 ]

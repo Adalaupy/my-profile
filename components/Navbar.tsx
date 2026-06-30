@@ -56,6 +56,15 @@ const Navbar = () => {
 											{proj.Name}
 										</Link>
 									))}
+									<Link
+										href="https://github.com/Adalaupy"
+										target="_blank"
+										rel="noopener noreferrer"
+										key={ProjectDetail.length}
+										className="text-amber-600 hover_scale"
+									>
+										Click for more
+									</Link>
 								</div>
 							</div>
 						)}

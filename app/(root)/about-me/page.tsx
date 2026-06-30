@@ -68,7 +68,7 @@ const page = () => {
 									className="flex justify-between"
 								>
 									<div className="basis-1/4">{item.Date}</div>
-									<div className="max-lg:text-sm font-bold basis-3/4 text-end">
+									<div className="max-lg:text-sm basis-3/4 text-end">
 										{item.Desc}
 									</div>
 								</div>
@@ -78,7 +78,7 @@ const page = () => {
 
 					<div className="item-box introbox">
 						<h3>Skill</h3>
-						<div className="intro-text flex flex-col gap-10">
+						<div className="intro-text flex flex-col gap-5">
 							{Skill.map((item) => (
 								<div
 									key={item.skill}
