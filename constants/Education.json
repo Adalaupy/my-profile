@@ -1,11 +1,16 @@
 [
 	{
+		"From": "2024",
+		"To": "2025",
+		"SchoolName": "HKU Space",
+		"Desc": "Postgraduate Diploma in Information Technology (CGPA:3.51)"
+	},	
+	{
 		"From": "2018",
 		"To": "2020",
 		"SchoolName": "City University of Hong Kong",
 		"Desc": "Business Analysis (CGPA:3.14)"
 	},
-
 	{
 		"From": "2016",
 		"To": "2018",
