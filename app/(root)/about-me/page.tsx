@@ -9,7 +9,7 @@ const page = () => {
 	const Self_Introduction =
 		"I am a self-motivated and responsible person who graduated in City University of Hong Kong specialising in Business Analysis. In order to enhance my ability of teamwork and adaptability, I have also applied different part-time job and internship program to jack up my experiences and learnt some skills that out of my major. I am now working as a Data Engineer, and I sincerely hope that my application will be accepted.";
 
-	Work.sort((a, b) => b.FromMonth - a.FromMonth || b.FromYear - a.FromYear);
+	Work.sort((a, b) => b.FromYear - a.FromYear || b.FromMonth - a.FromMonth  );
 
 	return (
 		<div className="container">
@@ -78,11 +78,11 @@ const page = () => {
 
 					<div className="item-box introbox">
 						<h3>Skill</h3>
-						<div className="intro-text flex flex-col gap-5">
+						<div className="intro-text flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-x-14 lg:gap-y-5">
 							{Skill.map((item) => (
 								<div
 									key={item.skill}
-									className="flex justify-between max-lg:text-[16px]"
+									className="flex justify-between gap-6 max-lg:text-[16px]"
 								>
 									<div>{item.skill}</div>
 									<div>
